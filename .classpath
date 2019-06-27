@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_131">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.jboss.ide.eclipse.as.core.server.runtime.runtimeTarget/WildFly 9.x Runtime">
-		<attributes>
-			<attribute name="owner.project.facets" value="jst.web"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="output" path="build/classes"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="D:/JPA-Hibernate-Jar-Files/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="D:/JPA-Hibernate-Jar-Files/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/JPA-Hibernate-Jar-Files/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/JPA-Hibernate-Jar-Files/ehcache-1.2.3.jar"/>
+	<classpathentry kind="lib" path="D:/JPA-Hibernate-Jar-Files/hibernate3.jar"/>
+	<classpathentry kind="lib" path="D:/JPA-Hibernate-Jar-Files/hibernate-jpa-2.0-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="D:/JPA-Hibernate-Jar-Files/javassist-3.9.0.GA.jar"/>
+	<classpathentry kind="lib" path="D:/JPA-Hibernate-Jar-Files/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/JPA-Hibernate-Jar-Files/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="D:/JPA-Hibernate-Jar-Files/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="D:/JPA-Hibernate-Jar-Files/slf4j-simple-1.5.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
