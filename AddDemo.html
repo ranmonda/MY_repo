@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <head>
+     <title> Java Script Demo</title>
+	  <script language="JavaScript">
+	    
+		function addFunction()
+		{
+		  var xObj=document.getElementById("txt1");
+		  var yObj=document.getElementById("txt2");
+		  
+		  var x=xObj.value;
+		  var y=yObj.value;
+		  var z=eval(x)+eval(y);
+		  alert("Sum is :"+z);
+		}
+	  </script>
+   </head>
+   <body bgcolor="pink">
+       <h2>Html Says Hello</h2>
+	   <hr/>
+	   Enter First Number :
+	   <input type="text" id="txt1" name="text1" value="">
+	   <br/>
+	   Enter Second Number :
+	   <input type="text" id="txt2" name="text2" value="">
+	   
+	   
+	   <input type="button"
+	   name="btnSubmit" onclick="addFunction();" value="ADD"/>
+	   
+	   
+   </body>
+   
+   
+</html>

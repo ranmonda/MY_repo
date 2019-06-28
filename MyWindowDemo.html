@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <head>
+     
+	  <script type="text/JavaScript">
+	    function greetMeInNewWin()
+		{
+		   var myWinObj=window.open("","CgWindow","width=600,height=800");
+		   var name=document.getElementById("fnameId").value;
+		   
+		   myWinObj.document.write("<body bgcolor='cyan'>");
+		   myWinObj.document.write("<h1>Welcome:</h1> "+name);
+		   myWinObj.document.write("</body>");
+		}
+		
+	  </script>
+   </head>
+   
+   <body>
+         Enter your name: 
+		 <input type="text"
+		        id="fnameId" value="">
+		   <br/>
+		 <input type="button"
+		        name="btnGreetMe1"
+				value="Greet Me in new Window"
+				onClick="greetMeInNewWin();">
+       
+   </body>
+   
+   
+</html>

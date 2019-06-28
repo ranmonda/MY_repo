@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+  <head>
+     <title> Java Script Demo</title>
+	  <script language="JavaScript">
+	    function greetMe()
+		{
+		  var nameObj=document.getElementById("txtFnameId");
+		  var salObj=document.getElementById("txtSalId");
+		  var name=nameObj.value;
+		  var mySal=salObj.value;
+		  var newSal=eval(mySal)+10000;
+		  alert("Welcome :"+name+"Your Updated Salary Is :"+newSal);
+		}
+		
+		function convertToUpper()
+		{
+		   var nameObj=window.document.getElementById("txtFnameId");
+		   var name=nameObj.value;
+		   var toUppName=name.toUpperCase();
+		   nameObj.value=toUppName;
+		}
+		
+	  </script>
+   </head>
+   <body bgcolor="purple">
+       <h2>Html Says Hello</h2>
+	   <hr/>
+	   Enter Your Name :
+	   <input id = "txtFnameId" type="text" name="txtFname" 
+	   onChange="convertToUpper()"
+	   value=""/>
+	   <br/>
+	   Enter Your Salary :
+	   <input id = "txtSalId" type="text" name="txtSal" 
+	   
+	   value=""/>
+	   <br/>
+	   <input type="button"
+	   name="btnSubmit" onclick="greetMe()" value="Submit Your Name"/>
+   </body>
+   
+   
+</html>

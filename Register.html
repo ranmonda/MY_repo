@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <head>
+     <title> Java Script Demo</title>
+	  <link href="Register.css" rel="styleSheet"/>
+	  <script src="ValidateAll.js" language="javaScript">
+	  
+	  </script>
+   </head>
+   <body onLoad="populateState();">
+       <h1>Enter Your Registration Details Here</h1>
+	   <form name="formRegister" onSubmit="return validateAllData()">
+	      <table border="1">
+		  <tr>
+		     <th>FirstName:</th>
+	      
+		    <td><input required type="text"
+		          name="txtFname" pattern="[A-z][a-z]+"
+		          value=""/><td>
+				  <td id="fnameErrorId"></td>
+				  </tr>
+		  <tr>
+		     <th>Password:</th>
+	      
+		    <td><input required type="password"
+		          name="txtPwd" 
+		          value=""/><td>
+				  <td id="pwdErrorId"></td>
+				  </tr>
+		   <tr>
+		     <th>Confirm Password:</th>
+	      
+		    <td><input required type="password"
+		          name="txtCPwd" 
+		          value=""/><td>
+				  <td id="cpwdErrorId"></td>
+				  </tr>	 
+            <tr>
+			    
+	            <th> State:</th>
+				<td><select name="txtState" onChange="populateCity();">
+				   <option>SELECT State</option>
+				</select></td>
+				<td id=""></td>
+				</tr>
+				<tr>
+				    <th>City:</th>
+					<td><select name="txtCity" >
+					<option>SELECT City</option>
+					   </select> <td>
+					<td id=""></td>
+				</tr>	
+				
+				<tr>	   
+		    <td><input  type="reset"
+		          name="btnReset" 
+		          value="RESET"/></td>
+				  <td></th>
+				  	      
+		    <td><input  type="submit"
+		          name="btnRegister" 
+		          value="REGISTER"/></td>
+				  <td></td>
+				  </tr>		
+			
+		  </table/>		  
+		  </form>
+		  
+	   <hr/>
+	   
+   </body>
+   
+   
+</html>

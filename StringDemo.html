@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <head>
+     <title> Java Script Demo</title>
+	  <script language="JavaScript">
+	    var compname=new String("CapGemini Go Goes");
+        var comploc= " Pune";
+
+        document.write("<br/>Cocat :"+compname.concat(comploc));
+        document.write("<br/>Length of compname :"+compname.length);
+        document.write("<br/>Char at 4 :"+compname.charAt(4));
+        document.write("<br/>Match g?"+compname.match("g"));		
+        document.write("<br/>************");
+		document.write("<br/>Match all g?"+compname.match(/g/gi));
+		
+        document.write("<br/>Match g?"+compname.match("g"));		
+		
+		var nmPat1=new RegExp("g","g");
+		document.write("<br/>Match all g?"+nmPat1.test(compname));
+		var nmPat2=new RegExp("g","gi");
+		document.write("<br/>Match all g?"+nmPat2.test(compname));
+		
+		var firstName="V2354aishali123";
+		var firstNamePat=/[A-Z][a-z]+/;
+		
+		if(firstNamePat.test(firstName))
+		{
+		  alert("Name : "+firstName);
+		}
+		else
+		{
+		  alert("Invalid Name");
+		}
+		
+	  </script>
+   </head>
+   <body bgcolor="pink">
+       <h2>Html Says Hello</h2>
+	   <hr/>
+	   <script language="JavaScript">
+	       window.document.write
+		   ("<br/><b>Welcome To Capgemini " + "Said by Body script</b>");
+		</script>
+   </body>
+   
+   
+</html>
