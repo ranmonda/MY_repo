@@ -1,12 +1,16 @@
 ##Please run the below DDL query before you execute this application.  
 
-CREATE TABLE dept_master
+CREATE TABLE order_master
 (id NUMBER(6) PRIMARY KEY,
-name VARCHAR2(30));
+order_date DATE);
 
-CREATE TABLE emp_master
+CREATE TABLE product_master
 (id NUMBER(6) PRIMARY KEY,
 name VARCHAR2(30),
-salary NUMBER(6,2),
-dept_no NUMBER(6) REFERENCES dept_master(id));
+price NUMBER(6,2));
+
+CREATE TABLE product_orders
+(order_id NUMBER(6) REFERENCES order_master(id),
+product_id NUMBER(6) REFERENCES product_master(id),
+PRIMARY KEY(order_id,product_id));
 
